@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 100svw;
+  width: 100svw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  background: hsl(30, 38%, 92%);
+}
+
+main.container{
+  width: 320px;
+  height: 605px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+div.wrapper{
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+section.top-container{
+  width: 320px;
+  height: 235.6px;
+  background: url("./images/image-product-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+section.bottom-container{
+  padding: 18px 20px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  color: hsl(228, 12%, 48%);
+}
+h1.title{
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+div.bottom-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+h1.item-name{
+  /* width: 80%; */
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color:  hsl(212, 21%, 14%);
+  margin-bottom: 12px;
+}
+p.item-description{
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  /* width: 95%; */
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+div.item-price{
+  display: flex;
+  margin-top: 24px;
+  flex-direction: row;
+  align-items: start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+}
+h1#promo-price{
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  padding-right: 18px;
+  font-family: "Fraunces", serif;
+}
+h2#original-price{
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: line-through;
+  padding-top: 8px;
+}
+
+button#cart-btn{
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  transition: all 350ms linear;
+}
+button#cart-btn:hover{
+  background: hsl(157, 31%, 25%);
+}
+
+footer{
+  width: 100%;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  /* font-family: "Fraunces", serif; */
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(228, 45%, 44%); 
+  transition: all 350ms linear;
+}
+
+
+
+@media only screen and (min-width: 720px) {
+  main.container{
+    width: 600px;
+    height: 450px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    /* margin: 40px; */
+    margin: 8% auto;
+    justify-content: flex-start;
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
+  }
+  div.wrapper{
+    width: 600px;
+    height: inherit;
+    border-radius: inherit;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+  }
+
+  section.top-container{
+    width: 300px;
+    height: 450px;
+    background: url("./images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+  section.bottom-container{
+    width: 300px;
+    height: 450px;
+    justify-content: space-between;
+    padding: 24px ;
+  }
+  div.bottom-wrapper{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  h1.item-name{
+    width: 80%;
+    font-size: 32px;
+    font-weight: 700;
+    color:  hsl(212, 21%, 14%);
+    margin-bottom: 12px;
+  }
+}
